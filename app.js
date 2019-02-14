@@ -13,7 +13,7 @@ app.use(cors({
 }));
 //7.1:node.js app.js
 //   加载第三方模块 express-session
-const session = require("express-session")
+const session = require("express-session")     
 //7.2:对模块配置   
 app.use(session({
   secret:"128位随机字符",    //安全字符串
