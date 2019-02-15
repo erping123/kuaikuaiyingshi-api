@@ -41,11 +41,11 @@ CREATE TABLE dy_index_dian(
     id   INT PRIMARY KEY AUTO_INCREMENT,
     fid   INT,
     img_url   VARCHAR(245),
-    title   VARCHAR(245),
+    title  VARCHAR(245),
     subtitle   VARCHAR(245),
-    ctime   DATE,
+    ctime   DATETIME,
     content VARCHAR(245),
-    on_show  DATE,
+    on_show  DATE
 );
 INSERT INTO dy_index_dian VALUES(1,1,'http://127.0.0.1:3000/index/img/aiqing/1.jpg','我的挚爱未婚妻','主演:冯芷墨',now(),'爱情 浪漫 约会',2019-02-09);
 INSERT INTO dy_index_dian VALUES(2,1,'http://127.0.0.1:3000/index/img/aiqing/2.jpg','蜀山降魔传','主演:吴卓羲,李熹子,赵闪闪,李亚男,陈国邦',now(),'爱情 浪漫 约会',2019-02-09);
@@ -236,7 +236,7 @@ CREATE TABLE dy_index_aiqing(
     title   VARCHAR(256),
     subtitle   VARCHAR(256),
     link    VARCHAR(260),
-    describe  VARCHAR(356),
+    describ  VARCHAR(356),
     ctime   DATETIME 
 
 );
